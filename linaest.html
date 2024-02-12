@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リナエスト語について考察する</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        /*orthography-table*/
+        .ot {
+            width: 100px;
+            text-align: center;
+            border-right: 1px solid;
+            border-bottom: 1px solid;
+        }
+    </style>
+</head>
+<body class="cool">
+<h1>リナエスト語について考察する</h1>
+<h2>0. まえがき</h2>
+<p>
+    2024年に入りリナエスト語への関心が高まったことにより、各種資料が再び収集・分析されて考察が深められるようになった。<br>
+    これらの進捗を書き記すため、新規にリポジトリを立ててログを残す。また、子音の音価はB音を代表として記すこととする。
+</p>
+
+<h3>0-1. 正書法改革</h2>
+<p>長らくASCII文字を基本とした正書法(以下、旧正書法)がえかとんにより使用されていたが、これは慣れるまでのコストがあまりにも高いということで、WinComposeを活用した文字を活用しての正書法改革が行われた。</p>
+<p>左が旧正書法、右が2月式正書法である。</p>
+<img src="./img/linaest-orthography.png" alt="" width="1000"/>
+<h4>0-1-1. 1月式</h4>
+<p>2024年1月の第4週からmelovilijuがリナエストの固有名詞を考え始める必要を実感し始めたことによってリナエスト語との格闘が始まり、悠里勢がみんなでリナエスト語まわりのことを考えるようになった時期に定められたもの。</p>
+<p>旧正書法でc /tʃ/, x /dx/, q /pr/, š /ʃx/, d /dzn/, ĵ /sx/, g /nʲ/で転写されていた子音がそれぞれč, ð, b, šx, đ, sx, ŋに、また母音字のŏ /oe/がöに変更された。特殊文字はすべて変更され、v, z, k, j, hがそれぞれ', ħ, ʔ, ɴ, ʜとなった。</p>
+<img src="./img/linaest-orthography2024Jan.png" alt="" width="500">
+
+<h4>0-1-2. 2月式</h4>
+<p>フォントを作るにあたって大文字小文字の区別がないことが明らかになったことを受け、改めて利便性に基づいて正書法が考察された結果定められたもの。</p>
+<p>母音字子音字を大文字に、特殊文字を小文字にあてることによって旧正書法の伝統を引き継ぎつつ可読性を上げることに成功した。</p>
+<p>また本来一字だったものが二字で翻字されるのは明らかに不都合なので、šx, sxをš, şに改めた。さらに他との区別を必要としないčをcに戻した。</p>
+<p>さらに、過去のリナエスト文字の画像を調べたところ、</p>
+<ul>
+    <li>サブ音化のグリフがfとは別に存在したこと</li>
+    <li>aiが合字で表記されていたこと</li>
+    <li>yと翻字されていたものが母音と子音でグリフが分かれていたこと</li>
+</ul>
+<p>が判明した。これらを踏まえ、サブ音化を'、aiをÆ、子音のyをJとして転写することとして解決。</p>
+<p>これにより、2月式の転写は以下のようになる。</p>
+
+<table>
+    <tr><th class="ot">子音転写</th><th class="ot">A音</th><th class="ot">B音</th><th class="ot">C音</th><th class="ot">母音転写</th><th class="ot">音価</th></tr>
+    <tr><th class="ot">P</th><td class="ot">/b/</td><td class="ot">/p/</td><td class="ot">/m/</td><th class="ot">A</th><td class="ot">/a/</td></tr>
+    <tr><th class="ot">T</th><td class="ot">/d/, /dz/</td><td class="ot">/t/, /ts/</td><td class="ot">/k/</td><th class="ot">Ä</th><td class="ot">/æ/</td></tr>
+    <tr><th class="ot">F</th><td class="ot">/v/</td><td class="ot" colspan="2">/f/</td><th class="ot">E</th><td class="ot">/je/</td></tr>
+    <tr><th class="ot">S</th><td class="ot">/z/</td><td class="ot">/s/</td><td class="ot">/ʃ/</td><th class="ot">É</th><td class="ot">/e/</td></tr>
+    <tr><th class="ot">C</th><td class="ot">/dʒ/</td><td class="ot" colspan="2">/tʃ/</td><th class="ot">U</th><td class="ot">/u/</th></tr>
+    <tr><th class="ot">Ð</th><td class="ot">/dv/</td><td class="ot">/dx/</td><td class="ot">/dz/</td><th class="ot">Ú</th><td class="ot">/ju/, /jo/</td></tr>
+    <tr><th class="ot">M</th><td class="ot">/m/</td><td class="ot">/nʲ/</td><td class="ot">/m/</td><th class="ot">Úz</th><td class="ot">/o/</td></tr>
+    <tr><th class="ot">R</th><td class="ot">/dr/</td><td class="ot" colspan="2">/r/</td><th class="ot">O</th><td class="ot">/o/</td></tr>
+    <tr><th class="ot">L</th><td class="ot">/l/</td><td class="ot">/ʎ/</td><td class="ot">/i/, /ju/</td><th class="ot">Ö</th><td class="ot">/ø~œ/</td></tr></tr>
+    <tr><th class="ot">B</th><td class="ot">/br/</td><td class="ot">/pr/</td><td class="ot">/p/</td><th class="ot">Æ</th><td class="ot">/e/</td></tr>
+    <tr><th class="ot">Š</th><td class="ot">/ʒx/</td><td class="ot">/ʃx/</td><td class="ot">/ʒ/</td><th class="ot">IA</th><td class="ot">/ia/</td></tr>
+    <tr><th class="ot">D</th><td class="ot">/dz/</td><td class="ot">/dzn/</td><td class="ot">/n/</td><th class="ot">UY</th><td class="ot">/ui/</td></tr>
+    <tr><th class="ot">Ş</th><td class="ot">/zx/</td><td class="ot">/sx/</td><td class="ot">/x/</td><th class="ot">EY</th><td class="ot">/eu/</td></tr>
+    <tr><th class="ot">Ŋ</th><td class="ot">/gnʲ/</td><td class="ot">/nʲ/</td><td class="ot">/ŋ/</td><th class="ot">OY</th><td class="ot">/oi/</td></tr>
+    <tr><th class="ot">J</th><td class="ot">/j/</td><td class="ot">/w/</td><td class="ot">/ja/</td></tr>
+    <tr><th class="ot">W</th><td class="ot">/w/</td><td class="ot">/j/, /wi/</td><td class="ot">/u/</td></tr>
+    <tr><th class="ot">N</th><td class="ot">/n/</td><td class="ot" colspan="2">直前の母音を鼻母音化<td></tr>
+</table>
+<br>
+<table>
+    <tr><th class="ot">特殊文字転写</th><th class="ot">音価</th></tr>
+    <tr><th class="ot">v</th><td class="ot">A音化</td></tr>
+    <tr><th class="ot">z</th><td class="ot">B音化</td></tr>
+    <tr><th class="ot">k</th><td class="ot">C音化</td></tr>
+    <tr><th class="ot">'</th><td class="ot">サブ音化</td></tr>
+    <tr><th class="ot">j</th><td class="ot">無声音化</td></tr>
+    <tr><th class="ot">h</th><td class="ot">有声音化</td></tr>
+    <tr><th class="ot">Jh</th><td class="ot">長音化</td></tr>
+</table>
+<p>ちなみにŊは字形がフォントによって大文字Nにフックが付いた形(Ŋ)と、ŋを大文字化した形(<span style="font-family: 'Arial';">Ŋ</span>)にわかれる。VerdanaやMontserrat、Georgiaは前者、ArialやHelvetica、Times New Romanは後者であるが、下線を付した場合などにNとの区別がつきやすいため文法書などでは後者を採用している。</p>
+<p>なお、google docsなどでは下線を付けた場合に下側につくダイアクリティカルマークが(Şなども含め)すべて見分けがつきづらくなるため、google docsでの強調は斜体か太字を使うべきである。</p>
+<img src="./img/TimesNewRoman-vs-Georgia.png" alt="" width="300">
+
+<h3>0-2. 時代区分の扱い</h3>
+<p>そもそもメタの事情を考えると、古典・中期・近世・近代・現代のリナエスト語はえかとんが興味の移り変わりや心境の変化で作り始めた「似て非なるもの」でしかなく、これらに直接的な子孫関係を見出しても得るところは少ない。</p>
+<p>したがって、これらは悠里世界における祖先を同じくする言語群の記述として反映するのが妥当である。</p>
+<p>つまり、「中期リナエスト語」や「現代リナエスト語」といった言語はあくまで「同じ時代のリナエスト語全体」である。これは現世で「英語」といったときにアメリカ英語やイギリス英語やオーストラリア英語が区別されずにまとめて指されることと似る。</p>
+<img src="./img/linaest-language-tree.jpg" alt="" width="500">
+<p>それぞれの時代の「リナエスト語」は上図のような側系統群であり、また古典期にも単一の言語であったわけではなく、地域によって細かい差異があったと思われる。</p>
+
+<h2>1. リナエスト語アクセント規則</h2>
+<p>辞書と発音記号を突き合せた結果、以下の規則を仮定すると204語のうち7語の例外を除きアクセント位置が説明できることが判明。</p>
+<ul>
+    <li>アクセントが乗りうる形態素・乗りえない形態素が存在する</li>
+    <li>接尾辞は後者</li>
+    <li>多くの独立語は前者</li>
+    <li>前者のうちもっとも後ろのものに注目して以下の規則を適用</li>
+    <ul>
+        <li>1音節ならその音節にアクセント</li>
+        <li>最終音節が短音節であるならば、後ろから2番目の音節にアクセント</li>
+        <li>ここで短音節とは(半母音を含む)codaがないものをいう</li>
+        <li>短音節でないならば、最終音節にアクセント</li>
+    </ul>
+</ul>
+
+<h2>2. 動詞活用</h2>
+<h3>2-1. パラダイムの統合</h3>
+<p>現代語文法として公開されている中には動詞活用は含まれていなかったため、活用表を近代の文法書から持ってきて現代仕様に削る作業を行った。</p>
+<p>まずI型とY型の語尾がよく似ていたことから狭母音型として単一パターンにまとめ、次に近代と現代で特殊文字のかけ方が変わったことによりF型が存在しなくなったのでF型とA型を統合して広母音型としてまとめた。</p>
+<p></p>
+
+</body>
+
+<div id="menu">読み込み中…</div>
+<div id="menuButton" onclick="openClose()">≡</div>
+<script src="./header.js" async></script>
+</html>
